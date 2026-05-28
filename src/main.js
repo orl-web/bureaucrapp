@@ -499,6 +499,13 @@ if (localStorage.getItem('bureaucrapp_simplified') === 'true') {
 }
 
 initAnalytics();
+
+// Legacy hash URL redirect (#/procedure/spid -> /procedure/spid)
+const oldHash = window.location.hash;
+if (oldHash.startsWith('#/category/') || oldHash.startsWith('#/procedure/') || oldHash === '#/privacy' || oldHash === '#/dashboard' || oldHash === '#/wizard') {
+  history.replaceState(null, '', oldHash.replace('#/', '/'));
+}
+
 const initialRoute = getRouteFromPath();
 navigateTo(initialRoute.view, initialRoute.id, true);
 
