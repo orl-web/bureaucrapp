@@ -44,7 +44,6 @@ export const identitaProcedures = [
     estimatedTime_en: '30-60 minutes',
     cost: 'Gratuito (alcuni provider richiedono pagamento per riconoscimento)',
     cost_en: 'Free (some providers charge for identity verification)',
-    videoUrl: 'https://youtu.be/rkG5-hbbdGQ',
     lastVerified: '2026-05-01',
     officialLinks: [
       { label: 'Sito ufficiale SPID', url: 'https://www.spid.gov.it/' },
@@ -94,7 +93,6 @@ export const identitaProcedures = [
       { label: 'Diritti di segreteria', label_en: 'Administrative fees', amount: 3.42 },
       { label: 'Spedizione a domicilio (opzionale)', label_en: 'Home delivery (optional)', amount: 7.50, optional: true }
     ],
-    videoUrl: 'https://youtu.be/5AXQNS_qAA4',
     lastVerified: '2026-05-01',
     officialLinks: [
       { label: 'Ministero dell\'Interno — CIE', label_en: 'Ministry of Interior — CIE', url: 'https://www.cartaidentita.interno.gov.it/' },
@@ -208,7 +206,6 @@ export const identitaProcedures = [
     estimatedTime: '2-4 settimane',
     cost: '€116 (€42.50 bollettino + €73.50 marca da bollo)',
     lastVerified: '2026-05-16',
-    videoUrl: 'https://www.youtube.com/watch?v=MJBc7iDQg1s',
     officialLinks: [
       { label: 'Polizia di Stato - Passaporto', label_en: 'State Police - Passport', url: 'https://www.poliziadistato.it/articolo/10301' },
       { label: 'Agenda Passaporto', label_en: 'Passport Booking', url: 'https://passaportonline.poliziadistato.it/' }
