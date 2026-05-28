@@ -208,6 +208,7 @@ export const identitaProcedures = [
     estimatedTime: '2-4 settimane',
     cost: '€116 (€42.50 bollettino + €73.50 marca da bollo)',
     lastVerified: '2026-05-16',
+    videoUrl: 'https://www.youtube.com/watch?v=MJBc7iDQg1s',
     officialLinks: [
       { label: 'Polizia di Stato - Passaporto', label_en: 'State Police - Passport', url: 'https://www.poliziadistato.it/articolo/10301' },
       { label: 'Agenda Passaporto', label_en: 'Passport Booking', url: 'https://passaportonline.poliziadistato.it/' }

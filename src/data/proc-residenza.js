@@ -12,6 +12,7 @@ export const residenzaProcedures = [
     cost: 'Gratuito',
     cost_en: 'Free',
     lastVerified: '2026-05-01',
+    videoUrl: 'https://www.youtube.com/watch?v=k_6SGWhlLdI',
     officialLinks: [
       { label: 'ANPR — Portale Anagrafe', label_en: 'ANPR — Registry Portal', url: 'https://www.anpr.interno.it/' },
       { label: 'Ministero dell\'Interno', label_en: 'Ministry of Interior', url: 'https://www.interno.gov.it' }
