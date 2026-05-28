@@ -18,6 +18,7 @@ import { categories } from './data/categories.js';
 import { getProcedureById, searchProcedures } from './data/procedures.js';
 import { getLanguage, setLanguage, t, tProp } from './i18n.js';
 import { initAnalytics, trackPageView } from './analytics.js';
+import { updateSEO } from './seo.js';
 
 let currentView = 'home';
 let currentCategoryId = null;
@@ -346,6 +347,13 @@ async function navigateTo(view, id, skipHashUpdate, restoreScroll) {
   requestAnimationFrame(focusHeading);
   const viewNames = { home: t('nav.home'), category: t('nav.categories'), procedure: '', privacy: t('nav.privacy') };
   if (view !== 'procedure') announce(`${viewNames[view] || ''} ${t('common.loaded')}`);
+
+  const routeProc = view === 'procedure' ? await getProcedureById(id).catch(() => null) : null;
+  const routeCat = view === 'category'
+    ? categories.find(c => c.id === id)
+    : routeProc ? categories.find(c => c.id === routeProc.categoryId) : null;
+  updateSEO(view, id, routeProc, routeCat);
+
   trackPageView(view, id);
 }
 
@@ -517,19 +525,4 @@ window.addEventListener('languageChanged', () => {
   navigateTo(currentView, currentView === 'category' ? currentCategoryId : currentProcedureId, true);
 });
 
-function updateMeta() {
-  const lang = getLanguage();
-  const localeMap = { it: 'it-IT', en: 'en-GB', ro: 'ro-RO', sq: 'sq-AL', zh: 'zh-CN', ar: 'ar-SA' };
-  document.documentElement.lang = lang;
-  const titles = {
-    it: 'Bureaucrapp — Guida alla Burocrazia Italiana',
-    en: 'Bureaucrapp — Guide to Italian Bureaucracy',
-    ro: 'Bureaucrapp — Ghidul Birocrației Italiene',
-    sq: 'Bureaucrapp — Udhëzuesi i Burokracisë Italiane',
-    zh: 'Bureaucrapp — 意大利官僚指南',
-    ar: 'Bureaucrapp — دليل البيروقراطية الإيطالية'
-  };
-  document.title = titles[lang] || titles.en;
-}
-addEventListener('languageChanged', updateMeta);
-updateMeta();
+
