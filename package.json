@@ -11,6 +11,6 @@
     "verify-links": "node scripts/verify-links.js"
   },
   "devDependencies": {
-    "vite": "^8.0.10"
+    "vite": "^7.0.0"
   }
 }
