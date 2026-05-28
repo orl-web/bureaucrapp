@@ -1,5 +1,4 @@
 {
-  "node": "22.x",
   "headers": [
     {
       "source": "/(.*)",
