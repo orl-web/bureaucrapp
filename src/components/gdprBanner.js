@@ -29,7 +29,7 @@ export function renderGdprBanner() {
     <p>${t('gdpr.text')}</p>
     <div class="gdpr-banner-actions">
       <button class="action-btn action-btn--secondary" data-gdpr-accept>${t('gdpr.accept')}</button>
-      <a href="#/privacy" class="action-btn action-btn--text" data-gdpr-more>${t('gdpr.more')}</a>
+      <a href="/privacy" class="action-btn action-btn--text" data-gdpr-more>${t('gdpr.more')}</a>
     </div>
   `;
 

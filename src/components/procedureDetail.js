@@ -137,9 +137,9 @@ export async function renderProcedureDetail(procedureId, onBack, onProcedureClic
   section.innerHTML = `
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="#" id="bread-home">${t('nav.home')}</a>
+        <a href="/" id="bread-home">${t('nav.home')}</a>
         <span class="separator" aria-hidden="true">›</span>
-        <a href="#" id="bread-cat">${cat ? tProp(cat, 'title') : ''}</a>
+        <a href="/category/${proc.categoryId}" id="bread-cat">${cat ? tProp(cat, 'title') : ''}</a>
         <span class="separator" aria-hidden="true">›</span>
         <span aria-current="page">${tProp(proc, 'title')}</span>
       </nav>

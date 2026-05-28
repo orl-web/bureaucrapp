@@ -35,6 +35,7 @@ function langVal(obj, prop) {
 export function updateSEO(view, id, procedure, category) {
   updateMeta(view, id, procedure, category);
   updateJsonLd(view, id, procedure, category);
+  updateCanonical(view, id);
 }
 
 function updateMeta(view, id, procedure, category) {
@@ -118,7 +119,7 @@ function updateJsonLd(view, id, procedure, category) {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
-        { '@type': 'ListItem', position: 2, name: catTitle, item: `${SITE_URL}#/category/${category.id}` },
+        { '@type': 'ListItem', position: 2, name: catTitle, item: `${SITE_URL}category/${category.id}` },
         { '@type': 'ListItem', position: 3, name: procTitle }
       ]
     });
@@ -156,6 +157,25 @@ function updateJsonLd(view, id, procedure, category) {
   if (container) {
     container.textContent = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }, null, 2);
   }
+}
+
+function updateCanonical(view, id) {
+  let url = SITE_URL;
+  if (view === 'procedure' && id) url = `${SITE_URL}procedure/${id}`;
+  else if (view === 'category' && id) url = `${SITE_URL}category/${id}`;
+  else if (view === 'privacy') url = `${SITE_URL}privacy`;
+  else if (view === 'dashboard') url = `${SITE_URL}dashboard`;
+  else if (view === 'wizard') url = `${SITE_URL}wizard`;
+
+  const canonicalLink = document.getElementById('canonical');
+  if (canonicalLink) canonicalLink.setAttribute('href', url);
+
+  document.querySelectorAll('[id^="href-"]').forEach(el => {
+    el.setAttribute('href', url);
+  });
+
+  const ogUrl = document.getElementById('og-url');
+  if (ogUrl) ogUrl.setAttribute('content', url);
 }
 
 function toIsoDuration(str) {

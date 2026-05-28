@@ -53,9 +53,9 @@ export function renderFooter() {
           <h4 class="footer-col-title">${t('footer.contact.title')}</h4>
           <div class="footer-links">
             <a href="mailto:hello@bureaucrapp.it" class="footer-link">hello@bureaucrapp.it</a>
-            <a href="#/wizard" class="footer-link">🤖 ${t('wizard.cta')}</a>
-            <a href="#/privacy" class="footer-link">${t('nav.privacy')}</a>
-            <a href="#/dashboard" class="footer-link">📊 ${t('dashboard.title')}</a>
+            <a href="/wizard" class="footer-link">🤖 ${t('wizard.cta')}</a>
+            <a href="/privacy" class="footer-link">${t('nav.privacy')}</a>
+            <a href="/dashboard" class="footer-link">📊 ${t('dashboard.title')}</a>
             <a href="https://github.com/bureaucrapp" target="_blank" class="footer-link">GitHub</a>
           </div>
         </div>
@@ -136,6 +136,21 @@ export function renderFooter() {
     }
   };
   window.addEventListener('consentChanged', syncConsent);
+
+  // SPA link interception
+  footer.querySelectorAll('.footer-link[href^="/"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const path = link.getAttribute('href');
+      const parts = path.replace(/^\//, '').split('/').filter(Boolean);
+      let view = null;
+      if (parts[0] === 'wizard') view = 'wizard';
+      else if (parts[0] === 'privacy') view = 'privacy';
+      else if (parts[0] === 'dashboard') view = 'dashboard';
+      else return;
+      e.preventDefault();
+      window.dispatchEvent(new CustomEvent('navigate', { detail: { view } }));
+    });
+  });
 
   // Regional settings
   const regionContainer = footer.querySelector('#footer-region');

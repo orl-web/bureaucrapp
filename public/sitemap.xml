@@ -10,7 +10,7 @@
 
   <!-- Privacy -->
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/privacy</loc>
+    <loc>https://bureaucrapp.vercel.app//privacy</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
@@ -18,49 +18,49 @@
 
   <!-- Categories -->
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/category/identita</loc>
+    <loc>https://bureaucrapp.vercel.app//category/identita</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/category/residenza</loc>
+    <loc>https://bureaucrapp.vercel.app//category/residenza</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/category/fisco</loc>
+    <loc>https://bureaucrapp.vercel.app//category/fisco</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/category/sanita</loc>
+    <loc>https://bureaucrapp.vercel.app//category/sanita</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/category/impresa</loc>
+    <loc>https://bureaucrapp.vercel.app//category/impresa</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/category/veicoli</loc>
+    <loc>https://bureaucrapp.vercel.app//category/veicoli</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/category/affitti</loc>
+    <loc>https://bureaucrapp.vercel.app//category/affitti</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/category/agevolazioni</loc>
+    <loc>https://bureaucrapp.vercel.app//category/agevolazioni</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -68,61 +68,61 @@
 
   <!-- Procedures: Identità e Accesso Digitale -->
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/codice-fiscale</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/codice-fiscale</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/spid</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/spid</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/cie</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/cie</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/cns</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/cns</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/pec</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/pec</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/passaporto</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/passaporto</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/cittadinanza-italiana</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/cittadinanza-italiana</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/firma-digitale</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/firma-digitale</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/cambio-nome</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/cambio-nome</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/autocertificazione</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/autocertificazione</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -130,31 +130,31 @@
 
   <!-- Procedures: Residenza e Anagrafe -->
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/residenza-iscrizione</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/residenza-iscrizione</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/cambio-residenza</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/cambio-residenza</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/certificati-anpr</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/certificati-anpr</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/permesso-soggiorno</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/permesso-soggiorno</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/ricongiungimento</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/ricongiungimento</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -162,43 +162,43 @@
 
   <!-- Procedures: Fisco e Tasse -->
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/dichiarazione-redditi</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/dichiarazione-redditi</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/isee</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/isee</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/partita-iva</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/partita-iva</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/imu-tari</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/imu-tari</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/bonus-detrazioni</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/bonus-detrazioni</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/assegno-unico</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/assegno-unico</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/successione</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/successione</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -206,25 +206,25 @@
 
   <!-- Procedures: Sanità -->
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/tessera-sanitaria</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/tessera-sanitaria</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/iscrizione-ssn</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/iscrizione-ssn</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/medico-base</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/medico-base</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/esenzioni-ticket</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/esenzioni-ticket</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -232,37 +232,37 @@
 
   <!-- Procedures: Impresa e Lavoro -->
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/apertura-piva</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/apertura-piva</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/scia-suap</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/scia-suap</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/camera-commercio</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/camera-commercio</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/contratti-lavoro</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/contratti-lavoro</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/naspi</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/naspi</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/durc</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/durc</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -270,31 +270,31 @@
 
   <!-- Procedures: Veicoli e Patente -->
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/patente-guida</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/patente-guida</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/bollo-auto</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/bollo-auto</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/passaggio-proprieta</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/passaggio-proprieta</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/revisione</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/revisione</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/iscrizione-asi</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/iscrizione-asi</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -302,37 +302,37 @@
 
   <!-- Procedures: Affitti e Locazioni -->
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/contratto-locazione</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/contratto-locazione</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/registrazione-contratto</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/registrazione-contratto</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/cedolare-secca</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/cedolare-secca</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/deposito-cauzionale</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/deposito-cauzionale</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/disdetta-rinnovo</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/disdetta-rinnovo</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/affitti-brevi</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/affitti-brevi</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -340,25 +340,25 @@
 
   <!-- Procedures: Incentivi e Agevolazioni -->
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/bonus-asilo-nido</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/bonus-asilo-nido</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/bonus-psicologo</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/bonus-psicologo</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/ecobonus-auto</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/ecobonus-auto</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bureaucrapp.vercel.app/#/procedure/carta-dedicata-a-te</loc>
+    <loc>https://bureaucrapp.vercel.app//procedure/carta-dedicata-a-te</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

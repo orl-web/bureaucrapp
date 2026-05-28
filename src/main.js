@@ -67,9 +67,9 @@ function createHeader() {
       <div class="header-search-results" id="header-search-results" role="listbox" aria-label="Risultati della ricerca"></div>
     </div>
     <nav class="header-nav" role="navigation" aria-label="Navigazione principale">
-      <a href="#/" class="header-nav-link active" data-nav="home">${t('nav.home')}</a>
-      <a href="#/" class="header-nav-link" data-nav="categories">${t('nav.categories')}</a>
-      <a href="#/" class="header-nav-link" data-nav="news">${t('nav.news')}</a>
+      <a href="/" class="header-nav-link active" data-nav="home">${t('nav.home')}</a>
+      <a href="/" class="header-nav-link" data-nav="categories">${t('nav.categories')}</a>
+      <a href="/" class="header-nav-link" data-nav="news">${t('nav.news')}</a>
       <select class="lang-toggle" id="lang-toggle" aria-label="Cambia lingua">
         <option value="it" ${getLanguage() === 'it' ? 'selected' : ''}>🇮🇹 IT</option>
         <option value="en" ${getLanguage() === 'en' ? 'selected' : ''}>🇬🇧 EN</option>
@@ -91,9 +91,9 @@ function createHeader() {
   overlay.className = 'mobile-nav-overlay';
   overlay.id = 'mobile-nav-overlay';
   overlay.innerHTML = `
-    <a href="#/" class="mobile-nav-link" data-nav="home">🏠 ${t('nav.home')}</a>
-    <a href="#/" class="mobile-nav-link" data-nav="categories">📂 ${t('nav.categories')}</a>
-    <a href="#/" class="mobile-nav-link" data-nav="news">📰 ${t('nav.news')}</a>
+    <a href="/" class="mobile-nav-link" data-nav="home">🏠 ${t('nav.home')}</a>
+    <a href="/" class="mobile-nav-link" data-nav="categories">📂 ${t('nav.categories')}</a>
+    <a href="/" class="mobile-nav-link" data-nav="news">📰 ${t('nav.news')}</a>
     <select class="mobile-lang-toggle" id="mobile-lang-toggle">
       <option value="it" ${getLanguage() === 'it' ? 'selected' : ''}>🇮🇹 Italiano</option>
       <option value="en" ${getLanguage() === 'en' ? 'selected' : ''}>🇬🇧 English</option>
@@ -261,44 +261,32 @@ function createHeader() {
   return header;
 }
 
-function getRouteFromHash() {
-  const hash = window.location.hash || '#/';
-  const parts = hash.replace('#/', '').split('/');
+function getRouteFromPath() {
+  const path = window.location.pathname || '/';
+  const parts = path.replace(/^\//, '').split('/').filter(Boolean);
 
-  if (parts[0] === 'category' && parts[1]) {
-    return { view: 'category', id: parts[1] };
-  } else if (parts[0] === 'procedure' && parts[1]) {
-    return { view: 'procedure', id: parts[1] };
-  } else if (parts[0] === 'privacy') {
-    return { view: 'privacy', id: null };
-  } else if (parts[0] === 'dashboard') {
-    return { view: 'dashboard', id: null };
-  } else if (parts[0] === 'wizard') {
-    return { view: 'wizard', id: null };
-  }
+  if (parts[0] === 'category' && parts[1]) return { view: 'category', id: parts[1] };
+  if (parts[0] === 'procedure' && parts[1]) return { view: 'procedure', id: parts[1] };
+  if (parts[0] === 'privacy') return { view: 'privacy', id: null };
+  if (parts[0] === 'dashboard') return { view: 'dashboard', id: null };
+  if (parts[0] === 'wizard') return { view: 'wizard', id: null };
   return { view: 'home', id: null };
 }
 
-function setHash(view, id) {
-  let hash = '#/';
-  if (view === 'category' && id) {
-    hash = `#/category/${id}`;
-  } else if (view === 'procedure' && id) {
-    hash = `#/procedure/${id}`;
-  } else if (view === 'privacy') {
-    hash = '#/privacy';
-  } else if (view === 'dashboard') {
-    hash = '#/dashboard';
-  } else if (view === 'wizard') {
-    hash = '#/wizard';
-  }
-  if (window.location.hash !== hash) {
-    history.pushState(null, '', hash);
+function setPath(view, id) {
+  let path = '/';
+  if (view === 'category' && id) path = `/category/${id}`;
+  else if (view === 'procedure' && id) path = `/procedure/${id}`;
+  else if (view === 'privacy') path = '/privacy';
+  else if (view === 'dashboard') path = '/dashboard';
+  else if (view === 'wizard') path = '/wizard';
+  if (window.location.pathname !== path) {
+    history.pushState(null, '', path);
   }
 }
 
-async function navigateTo(view, id, skipHashUpdate, restoreScroll) {
-  if (!skipHashUpdate) {
+async function navigateTo(view, id, skipPathUpdate, restoreScroll) {
+  if (!skipPathUpdate) {
     try {
       history.replaceState({ ...history.state, scrollY: window.scrollY }, '');
     } catch {}
@@ -309,31 +297,31 @@ async function navigateTo(view, id, skipHashUpdate, restoreScroll) {
   if (view === 'home') {
     currentCategoryId = null;
     currentProcedureId = null;
-    if (!skipHashUpdate) setHash('home');
+    if (!skipPathUpdate) setPath('home');
     await renderHome();
   } else if (view === 'category') {
     currentCategoryId = id;
     currentProcedureId = null;
-    if (!skipHashUpdate) setHash('category', id);
+    if (!skipPathUpdate) setPath('category', id);
     await renderCategory(id);
   } else if (view === 'procedure') {
     currentProcedureId = id;
-    if (!skipHashUpdate) setHash('procedure', id);
+    if (!skipPathUpdate) setPath('procedure', id);
     await renderProcedure(id);
   } else if (view === 'privacy') {
     currentCategoryId = null;
     currentProcedureId = null;
-    if (!skipHashUpdate) setHash('privacy');
+    if (!skipPathUpdate) setPath('privacy');
     renderPrivacy();
   } else if (view === 'dashboard') {
     currentCategoryId = null;
     currentProcedureId = null;
-    if (!skipHashUpdate) setHash('dashboard');
+    if (!skipPathUpdate) setPath('dashboard');
     await renderDash();
   } else if (view === 'wizard') {
     currentCategoryId = null;
     currentProcedureId = null;
-    if (!skipHashUpdate) setHash('wizard');
+    if (!skipPathUpdate) setPath('wizard');
     renderWizardView();
   }
 
@@ -425,12 +413,13 @@ function renderNotFound(type, id) {
       <div style="font-size:4rem;margin-bottom:1rem">🔍</div>
       <h2 style="font-size:var(--fs-2xl);margin-bottom:0.5rem">${t('common.not_found_title') || 'Pagina non trovata'}</h2>
       <p style="color:var(--text-secondary);margin-bottom:2rem">${t('common.not_found_desc') || 'La procedura o categoria richiesta non esiste.'}</p>
-      <button class="action-btn" onclick="window.location.hash='#/'">← ${t('common.back')}</button>
+      <button class="action-btn" id="notfound-back">← ${t('common.back')}</button>
     </div>
   `;
   app.appendChild(section);
   app.appendChild(renderFooter());
   animateContent();
+  section.querySelector('#notfound-back')?.addEventListener('click', () => navigateTo('home'));
 }
 
 async function renderCategory(categoryId) {
@@ -495,7 +484,7 @@ function renderWizardView() {
 }
 
 window.addEventListener('popstate', () => {
-  const route = getRouteFromHash();
+  const route = getRouteFromPath();
   navigateTo(route.view, route.id, true, true);
 });
 
@@ -510,7 +499,7 @@ if (localStorage.getItem('bureaucrapp_simplified') === 'true') {
 }
 
 initAnalytics();
-const initialRoute = getRouteFromHash();
+const initialRoute = getRouteFromPath();
 navigateTo(initialRoute.view, initialRoute.id, true);
 
 if ('serviceWorker' in navigator) {
@@ -523,6 +512,11 @@ if ('serviceWorker' in navigator) {
 
 window.addEventListener('languageChanged', () => {
   navigateTo(currentView, currentView === 'category' ? currentCategoryId : currentProcedureId, true);
+});
+
+window.addEventListener('navigate', (e) => {
+  const { view, id } = e.detail || {};
+  if (view) navigateTo(view, id);
 });
 
 

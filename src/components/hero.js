@@ -43,7 +43,7 @@ export function renderHero(onCategoryClick, onProcedureClick) {
   });
 
   section.querySelector('#wizard-pill').addEventListener('click', () => {
-    window.location.hash = '#/wizard';
+    window.dispatchEvent(new CustomEvent('navigate', { detail: { view: 'wizard' } }));
   });
 
   const input = section.querySelector('#search-input');
