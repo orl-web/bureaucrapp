@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bureaucrapp — Aggiornamenti Normativi</title>
+    <link>https://bureaucrapp.vercel.app/</link>
+    <description>Ultimi aggiornamenti normativi su burocrazia italiana: SPID, residenza, fisco, sanità, impresa e veicoli.</description>
+    <language>it</language>
+    <lastBuildDate>Wed, 27 May 2026 00:00:00 +0200</lastBuildDate>
+    <atom:link href="https://bureaucrapp.vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Carta d'Identità Cartacea: addio dal 3 agosto 2026</title>
+      <link>https://bureaucrapp.vercel.app/#/procedure/cie</link>
+      <guid>https://bureaucrapp.vercel.app/#/news/cie-scadenza-2026</guid>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0200</pubDate>
+      <description>Dal 3 agosto 2026 le carte d'identità in formato cartaceo cesseranno di essere valide, anche se riportano una scadenza successiva.</description>
+    </item>
+    <item>
+      <title>CIE illimitata per gli over 70</title>
+      <link>https://bureaucrapp.vercel.app/#/procedure/cie</link>
+      <guid>https://bureaucrapp.vercel.app/#/news/cie-over70</guid>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 +0200</pubDate>
+      <description>Dal 30 luglio 2026, le nuove CIE rilasciate a cittadini di età ≥70 anni avranno validità illimitata.</description>
+    </item>
+    <item>
+      <title>IRPEF 2026: confermati i 3 scaglioni</title>
+      <link>https://bureaucrapp.vercel.app/#/category/fisco</link>
+      <guid>https://bureaucrapp.vercel.app/#/news/irpef-2026</guid>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0100</pubDate>
+      <description>Confermata la struttura a 3 aliquote: 23% fino a €28.000, 35% tra €28.000 e €50.000, 43% oltre €50.000.</description>
+    </item>
+    <item>
+      <title>ISEE 2026: nuova DSU entro il 28 febbraio</title>
+      <link>https://bureaucrapp.vercel.app/#/procedure/isee</link>
+      <guid>https://bureaucrapp.vercel.app/#/news/isee-2026</guid>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0100</pubDate>
+      <description>L'ISEE 2025 è scaduto il 31/12/2025. Per non perdere l'Assegno Unico, presentare la DSU entro il 28/02/2026.</description>
+    </item>
+    <item>
+      <title>Sistema Tessera Sanitaria: invio dati ora annuale</title>
+      <link>https://bureaucrapp.vercel.app/#/procedure/tessera-sanitaria</link>
+      <guid>https://bureaucrapp.vercel.app/#/news/tessera-sanitaria-annuale</guid>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0100</pubDate>
+      <description>La trasmissione delle spese sanitarie da parte di medici e farmacie è passata a cadenza annuale.</description>
+    </item>
+    <item>
+      <title>Figli a carico: detrazioni solo fino a 30 anni</title>
+      <link>https://bureaucrapp.vercel.app/#/category/fisco</link>
+      <guid>https://bureaucrapp.vercel.app/#/news/figli-carico-2026</guid>
+      <pubDate>Thu, 10 Mar 2026 00:00:00 +0100</pubDate>
+      <description>Dal 2026, le detrazioni per figli a carico spettano generalmente solo fino ai 30 anni di età del figlio.</description>
+    </item>
+    <item>
+      <title>Cedolare secca: aliquota al 26% per affitti brevi dal secondo immobile</title>
+      <link>https://bureaucrapp.vercel.app/#/category/affitti</link>
+      <guid>https://bureaucrapp.vercel.app/#/news/cedolare-secca-update</guid>
+      <pubDate>Thu, 01 Apr 2026 00:00:00 +0200</pubDate>
+      <description>Per i contratti di locazione breve, l'aliquota della cedolare secca sale al 26% dal secondo immobile in poi.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <script>document.documentElement.lang=localStorage.getItem('bureaucrapp_lang')||'it'</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bureaucrapp — La guida completa alla burocrazia italiana. Procedure passo-passo, documenti necessari, link ufficiali e aggiornamenti normativi per SPID, residenza, tasse, sanità, impresa e veicoli." />
+    <meta name="theme-color" content="#060b18" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'none'; base-uri 'self'" />
+    <title>Bureaucrapp — Guida alla Burocrazia Italiana</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/icon-192.png" />
+    <link rel="canonical" href="https://bureaucrapp.vercel.app/" />
+    <link rel="alternate" type="application/rss+xml" title="Bureaucrapp — Aggiornamenti Normativi" href="/rss.xml" />
+    <link rel="alternate" href="https://bureaucrapp.vercel.app/" hreflang="it" />
+    <link rel="alternate" href="https://bureaucrapp.vercel.app/" hreflang="en" />
+    <link rel="alternate" href="https://bureaucrapp.vercel.app/" hreflang="ro" />
+    <link rel="alternate" href="https://bureaucrapp.vercel.app/" hreflang="sq" />
+    <link rel="alternate" href="https://bureaucrapp.vercel.app/" hreflang="zh" />
+    <link rel="alternate" href="https://bureaucrapp.vercel.app/" hreflang="ar" />
+    <link rel="alternate" href="https://bureaucrapp.vercel.app/" hreflang="x-default" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bureaucrapp — Guida alla Burocrazia Italiana" />
+    <meta property="og:description" content="Procedure passo-passo, documenti necessari, link ufficiali per SPID, residenza, tasse, sanità, impresa e veicoli." />
+    <meta property="og:url" content="https://bureaucrapp.vercel.app/" />
+    <meta property="og:image" content="https://bureaucrapp.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta property="og:locale:alternate" content="ro_RO" />
+    <meta property="og:locale:alternate" content="sq_AL" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta property="og:locale:alternate" content="ar_SA" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bureaucrapp — Guida alla Burocrazia Italiana" />
+    <meta name="twitter:description" content="Procedure passo-passo, documenti necessari, link ufficiali per SPID, residenza, tasse, sanità, impresa e veicoli." />
+    <meta name="twitter:image" content="https://bureaucrapp.vercel.app/og-image.png" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Bureaucrapp",
+      "url": "https://bureaucrapp.vercel.app/",
+      "description": "Guida completa alla burocrazia italiana con procedure passo-passo, documenti necessari e link ufficiali.",
+      "inLanguage": ["it", "en", "ro", "sq", "zh", "ar"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://bureaucrapp.vercel.app/#/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <a href="#app" class="skip-link" tabindex="1">Salta al contenuto principale</a>
+    <div id="app" role="main" aria-label="Contenuto principale"></div>
+    <div id="aria-live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
